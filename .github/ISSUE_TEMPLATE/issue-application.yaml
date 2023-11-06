@@ -298,10 +298,9 @@ body:
     label: Website
   validations:
     required: true
-- type: textarea
+- type: input
   attributes:
-    label: Social Media
-    render: text
+    label: Social Media handle
   validations:
     required: true
 - type: dropdown
