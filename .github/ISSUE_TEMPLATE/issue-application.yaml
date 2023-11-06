@@ -300,7 +300,18 @@ body:
     required: true
 - type: input
   attributes:
-    label: Social Media handle
+    label: Social Media Handle
+  validations:
+    required: true
+- type: dropdown
+  attributes:
+    label: Social Media Type
+    options:
+      - Slack
+      - Twitter
+      - Facebook
+      - WeChat
+      - Other
   validations:
     required: true
 - type: dropdown
