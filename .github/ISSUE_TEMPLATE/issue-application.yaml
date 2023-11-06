@@ -298,20 +298,12 @@ body:
     label: Website
   validations:
     required: true
-- type: input
+- type: textarea
   attributes:
-    label: Social Media handle
+    label: Social Media
     render: text
   validations:
     required: true
-- type: dropdown
-  attributes:
-    label: Social Media Type
-    options:
-      - Slack
-      - Twitter
-      - WeChat
-      - Facebook
 - type: dropdown
   attributes:
     label: What is your role related to the dataset
@@ -323,19 +315,33 @@ body:
       - Other
   validations:
     required: true
-- type: input
+- type: dropdown
   attributes:
     label: Total amount of DataCap being requested
-    render: text
+    options:
+      - 100TiB
+      - 200TiB
+      - 300TiB
+      - 400TiB
+      - 500TiB
+      - 1PiB
+      - 2PiB
+      - 3PiB
+      - 4PiB
+      - 5PiB
+      - 6PiB
+      - 7PiB
+      - 8PiB
+      - 9PiB
+      - 10PiB
+      - 11PiB
+      - 12PiB
+      - 13PiB
+      - 14PiB
+      - 15PiB
+      - More Than 15PiB
   validations:
     required: true
-- type: dropdown
-  attribrute:
-    label: Unit
-    options:
-      -GiB
-      -TiB
-      -PiB
 - type: input
   attributes:
     label: Expected size of single dataset (one copy)
