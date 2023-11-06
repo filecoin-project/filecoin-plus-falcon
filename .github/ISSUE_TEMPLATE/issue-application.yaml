@@ -346,7 +346,7 @@ body:
     required: true
 - type: dropdown
   attributes:
-    label: Unit for expected size of single dataset (one copy)
+    label: Unit for expected size of single dataset
     options:
       - GiB
       - TiB
@@ -366,33 +366,26 @@ body:
       - 10
   validations:
     required: true
-- type: dropdown
+- type: input
   attributes:
     label: Weekly allocation of DataCap requested
     description: This amount is usually between 1 TiB and 1000 TiB
+  validations:
+    required: true
+- type: dropdown
+  attributes:
+    label: Unit for weekly allocation of DataCap requested
     options:
-      - 10TiB
-      - 50TiB
-      - 100TiB
-      - 150TiB
-      - 200TiB
-      - 250TiB
-      - 300TiB
-      - 350TiB
-      - 400TiB
-      - 450TiB
-      - 500TiB
-      - 600TiB
-      - 700TiB
-      - 800TiB
-      - 900TiB
-      - 1PiB
+      - GiB
+      - TiB
+      - PiB
   validations:
     required: true
 - type: input
   attributes:
     label: On-chain address for first allocation
-    description: Make sure the address exists on the chain
+    description: Make sure the address exists on the chain. This cannot be changed once input here. 
+    Also make sure that this address is not used for other applications.
   validations:
     required: true
 - type: dropdown
