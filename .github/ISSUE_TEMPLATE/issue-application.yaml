@@ -845,7 +845,7 @@ body:
   attributes:
     render: text
     label: Please list the provider IDs and location of the storage providers you will be working with. 
-    description: Please list in the format "1. SP ID, Location 2. SP ID, Location...". 
+    description: Please list in the format "1. SP ID, Location 2. SP ID, Location...". \n Note that it is a requirement to list a minimum of 5 unique provider IDs, and that your client address will be verified against this list in the future
   validations:
     required: true
 - type: dropdown
