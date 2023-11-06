@@ -332,7 +332,7 @@ body:
     required: true
 - type: dropdown
   attributes:
-    label: Unit for total amount of DataCap being requested 
+    label: Unit
     options:
       - GiB
       - TiB
@@ -346,17 +346,11 @@ body:
     required: true
 - type: dropdown
   attributes:
-    label: Unit for expected size of single dataset
-    options:
-      - GiB
-      - TiB
-      - PiB
-  validations:
-    required: true
-- type: dropdown
-  attributes:
     label: Number of replicas to store
     options:
+      - 1
+      - 2
+      - 3
       - 4
       - 5
       - 6
@@ -366,10 +360,27 @@ body:
       - 10
   validations:
     required: true
-- type: input
+- type: dropdown
   attributes:
     label: Weekly allocation of DataCap requested
     description: This amount is usually between 1 TiB and 1000 TiB
+    options:
+      - 10TiB
+      - 50TiB
+      - 100TiB
+      - 150TiB
+      - 200TiB
+      - 250TiB
+      - 300TiB
+      - 350TiB
+      - 400TiB
+      - 450TiB
+      - 500TiB
+      - 600TiB
+      - 700TiB
+      - 800TiB
+      - 900TiB
+      - 1PiB
   validations:
     required: true
 - type: input
