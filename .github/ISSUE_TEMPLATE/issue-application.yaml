@@ -845,6 +845,7 @@ body:
   attributes:
     render: text
     label: Please list the provider IDs and location of the storage providers you will be working with. 
+    description: Please list in the format
   validations:
     required: true
 - type: dropdown
