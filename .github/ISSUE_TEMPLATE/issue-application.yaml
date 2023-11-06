@@ -372,15 +372,6 @@ body:
     description: This amount is usually between 1 TiB and 1000 TiB
   validations:
     required: true
-- type: dropdown
-  attributes:
-    label: Unit
-    options:
-      - GiB
-      - TiB
-      - PiB
-  validations:
-    required: true
 - type: input
   attributes:
     label: On-chain address for first allocation
