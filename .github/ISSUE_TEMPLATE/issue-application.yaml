@@ -384,8 +384,7 @@ body:
 - type: input
   attributes:
     label: On-chain address for first allocation
-    description: Make sure the address exists on the chain. This cannot be changed once input here. 
-    Also make sure that this address is not used for other applications.
+    description: Make sure the address exists on the chain. This cannot be changed once input here. Also make sure that this address is not used for other applications.
   validations:
     required: true
 - type: dropdown
