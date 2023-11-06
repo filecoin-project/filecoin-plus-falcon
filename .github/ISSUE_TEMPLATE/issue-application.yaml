@@ -325,31 +325,18 @@ body:
       - Other
   validations:
     required: true
+- type: input
+  attributes:
+    label: Total amount of DataCap being requested 
+  validations:
+    required: true
 - type: dropdown
   attributes:
-    label: Total amount of DataCap being requested
+    label: Unit
     options:
-      - 100TiB
-      - 200TiB
-      - 300TiB
-      - 400TiB
-      - 500TiB
-      - 1PiB
-      - 2PiB
-      - 3PiB
-      - 4PiB
-      - 5PiB
-      - 6PiB
-      - 7PiB
-      - 8PiB
-      - 9PiB
-      - 10PiB
-      - 11PiB
-      - 12PiB
-      - 13PiB
-      - 14PiB
-      - 15PiB
-      - More Than 15PiB
+      - GiB
+      - TiB
+      - PiB
   validations:
     required: true
 - type: input
