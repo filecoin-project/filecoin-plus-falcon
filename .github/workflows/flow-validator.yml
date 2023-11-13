@@ -1,0 +1,42 @@
+# This workflow will validate if an application flow is correct
+# Use Cases:
+# - When an application is in "submitted state"
+#   · application.info.application_lifecycle.validated_by must be empty
+#   · application.info.application_lifecycle.validated_at must be empty
+#   · application.info.application_lifecycle.current_allocation_id must be empty
+#   · application.info.datacap_allocations array must be empty
+# - When an aplication is in some other state
+#   · actor must be the Filplus Bot
+name: Flow Validator
+
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - reopened
+    branches:
+      - main
+
+jobs:
+  validate-flow:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Use Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: 14.x
+
+    - name: Install Dependencies
+      run: npm install axios
+
+    - name: Run Script
+      env:
+        PR_NUMBER: ${{ github.event.pull_request.number }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        OWNER: ${{ github.event.repository.owner.login }}
+        REPO: ${{ github.event.repository.name }}
+      run: node .github/scripts/flow-validator.mjs
