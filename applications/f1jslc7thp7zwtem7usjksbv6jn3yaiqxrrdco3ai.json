@@ -1,0 +1,48 @@
+{
+  "Version": 1,
+  "ID": "f1jslc7thp7zwtem7usjksbv6jn3yaiqxrrdco3ai",
+  "Issue Number": "40",
+  "Client": {
+    "Name": "client",
+    "Region": "Spain",
+    "Industry": "ind",
+    "Website": "web",
+    "Social Media": "sm",
+    "Role": "r"
+  },
+  "Project": {
+    "Project Id": "pr id",
+    "Brief history of your project and organization": "brief",
+    "Is this project associated with other projects/ecosystem stakeholders?": "ecosystem",
+    "Describe the data being stored onto Filecoin": "data",
+    "Where was the data currently stored in this dataset sourced from} ": "asd",
+    "How do you plan to prepare the dataset": "asd",
+    "Please share a sample of the data (a link to a file, an image, a table, etc., are good ways to do this.)": "asd",
+    "Confirm that this is a public dataset that can be retrieved by anyone on the network (i.e., no specific permissions or access rights are required to view the data)": "asd",
+    "What is the expected retrieval frequency for this data": "asd",
+    "For how long do you plan to keep this dataset stored on Filecoin": "asd",
+    "In which geographies do you plan on making storage deals": "asda",
+    "How will you be distributing your data to storage providers": "asd",
+    "Please list the provider IDs and location of the storage providers you will be working with. Note that it is a requirement to list a minimum of 5 unique provider IDs, and that your client address will be verified against this list in the future": "111, 231",
+    "Can you confirm that you will follow the Fil+ guideline (Data owner should engage at least 4 SPs and no single SP ID should receive >30% of a client's allocated DataCap)": ""
+  },
+  "Datacap": {
+    "Type": "ldn-v3",
+    "Data Type": "Slingshot",
+    "Total Requested Amount": "2.5PiB",
+    "Single Size Dataset": "512TiB",
+    "Replicas": 2,
+    "Weekly Allocation": "2TiB"
+  },
+  "Lifecycle": {
+    "State": "Submitted",
+    "Validated At": "",
+    "Validated By": "",
+    "Active": true,
+    "Updated At": "2023-11-20 13:47:23.344661272 UTC",
+    "Active Request ID": "",
+    "On Chain Address": "f1jslc7thp7zwtem7usjksbv6jn3yaiqxrrdco3ai",
+    "Multisig Address": "MULTISIG ADDRESS"
+  },
+  "Allocation Requests": []
+}
