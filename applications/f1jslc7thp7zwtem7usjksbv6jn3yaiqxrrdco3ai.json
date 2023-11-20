@@ -32,7 +32,7 @@
     "Total Requested Amount": "2.5PiB",
     "Single Size Dataset": "512TiB",
     "Replicas": 2,
-    "Weekly Allocation": "2TiB"
+    "Weekly Allocation": "1.6TiB"
   },
   "Lifecycle": {
     "State": "ReadyToSign",
@@ -44,15 +44,5 @@
     "On Chain Address": "f1jslc7thp7zwtem7usjksbv6jn3yaiqxrrdco3ai",
     "Multisig Address": "MULTISIG ADDRESS"
   },
-  "Allocation Requests": [
-    {
-      "ID": "e6fa8b21-1be8-49fa-91cb-364680f1bd4c",
-      "Request Type": "First",
-      "Created At": "2023-11-20 14:16:55.510535311 UTC",
-      "Updated At": "2023-11-20 14:16:55.510536028 UTC",
-      "Active": true,
-      "Allocation Amount": "2TiB",
-      "Signers": []
-    }
-  ]
+  "Allocation Requests": []
 }
