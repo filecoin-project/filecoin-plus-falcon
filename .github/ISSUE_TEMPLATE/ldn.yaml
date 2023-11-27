@@ -24,6 +24,7 @@ body:
 - type: input
   attributes:
     label: On Chain Address
+    description: Make sure the address exists on the chain. This cannot be changed once input here. Also make sure that this address is not used for other applications.
   validations:
     required: true
 - type: markdown
@@ -290,9 +291,26 @@ body:
       - Zimbabwe
   validations:
     required: true
-- type: input
+- type: dropdown
   attributes:
     label: Industry
+    options:
+      - Life Science / Healthcare
+      - Arts & Recreation
+      - Education & Training
+      - Environment
+      - Web3 / Crypto
+      - IT & Technology Services
+      - Professional Services (Legal, Consulting, Advising)
+      - Government
+      - Not-for-Profit
+      - Financial Services
+      - Utilities
+      - Resources, Agriculture & Fisheries
+      - Construction, Property & Real Estate
+      - Information, Media & Telecommunications
+      - Transport Services
+      - Other
   validations:
     required: true
 - type: input
@@ -305,9 +323,24 @@ body:
     label: Social Media
   validations:
     required: true
-- type: input
+- type: dropdown
   attributes:
-    label: Role
+    label: Social Media Type
+    options:
+      - Slack
+      - Twitter
+      - Facebook
+      - WeChat
+      - Other
+- type: dropdown
+  attributes:
+    label: Role    
+    options:
+      - Dataset Owner
+      - Data Preparer
+      - Storage provider filling out application on behalf of the data owner
+      - Data onramp entity that provides data onboarding services to multiple clients
+      - Other
   validations:
     required: true
 - type: markdown
@@ -334,9 +367,15 @@ body:
     label: Describe the data being stored onto Filecoin
   validations:
     required: true
-- type: input
+- type: dropdown
   attributes:
     label: Where was the data currently stored in this dataset sourced from
+    options:
+      - AWS Cloud
+      - Google Cloud
+      - Azure Cloud
+      - My Own Storage Infra
+      - Other
   validations:
     required: true
 - type: input
@@ -354,29 +393,71 @@ body:
     label: Confirm that this is a public dataset that can be retrieved by anyone on the network (i.e., no specific permissions or access rights are required to view the data)
   validations:
     required: true
-- type: input
+- type: dropdown
   attributes:
     label: What is the expected retrieval frequency for this data
+    options:
+      - Daily
+      - Weekly
+      - Monthly
+      - Yearly
+      - Sporadic
+      - Never
   validations:
     required: true
-- type: input
+- type: dropdown
   attributes:
     label: For how long do you plan to keep this dataset stored on Filecoin
+    options:
+      - Less than 1 year
+      - 1 to 1.5 years
+      - 1.5 to 2 years
+      - 2 to 3 years
+      - More than 3 years
+      - Permanently
   validations:
     required: true
-- type: input
+- type: dropdown
   attributes:
     label: In which geographies do you plan on making storage deals
+    multiple: true
+    options:
+      - Greater China
+      - Asia other than Greater China
+      - Africa
+      - North America
+      - South America
+      - Europe
+      - Australia (continent)
+      - Antarctica
   validations:
     required: true
-- type: input
+- type: dropdown
   attributes:
     label: How will you be distributing your data to storage providers
+    multiple: true
+    options:
+      - Cloud storage (i.e. S3)
+      - HTTP or FTP server
+      - IPFS
+      - Shipping hard drives
+      - Lotus built-in data transfer
+      - Venus built-in data transfer
+      - I don't know yet
+      - Others
   validations:
     required: true
 - type: input
   attributes:
     label: Please list the provider IDs and location of the storage providers you will be working with. Note that it is a requirement to list a minimum of 5 unique provider IDs, and that your client address will be verified against this list in the future
+  validations:
+    required: true
+- type: dropdown
+  attributes:
+    label: Can you confirm that you will follow the Fil+ guideline (Data owner should engage at least 4 SPs and no single SP ID should receive >30% of a client's allocated DataCap)
+    options:
+      - "No"
+      - "Yes"
   validations:
     required: true
 - type: markdown
@@ -395,8 +476,7 @@ body:
     label: Type
     options:
       - Slingshot
-      - Public, Open Dataset (Research/Non-P
-        rofit)
+      - Public, Open Dataset (Research/Non-Profit)
       - Public, Open Commercial/Enterprise
       - Private Commercial/Enterprise
       - Private Non-Profit / Social impact
@@ -405,23 +485,43 @@ body:
 - type: input
   attributes:
     label: Total Requested Amount
+    description: i.e - 500GiB, 1000TiB, 2.5PiB
   validations:
     required: true
 - type: input
   attributes:
     label: Single Size Dataset
+    description: i.e - 500GiB, 1000TiB, 2.5PiB
   validations:
     required: true
-- type: input
+- type: dropdown
   attributes:
     label: Replicas
+    options:
+      - 4
+      - 5
+      - 6
+      - 7
+      - 8
+      - 9
+      - 10
   validations:
     required: true
 - type: input
   attributes:
     label: Weekly Allocation
+    description: This amount is usually between 1 TiB and 1000 TiB - i.e - 500GiB, 1000TiB, 2.5PiB
   validations:
     required: true
-
-        
-
+- type: checkboxes
+  attributes:
+    label: Custom multisig 
+    description: Check this box off if you have explicitly been asked to by the governance team.
+    options:
+      - label: "Use Custom Multisig"
+- type: input
+  attributes:
+    label: Identifier
+    description: If needed Filecoin team will fill up this field later on. You can skip this field.
+  validations:
+    required: false
