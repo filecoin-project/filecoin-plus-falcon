@@ -2357,6 +2357,30 @@
       "previous_config": {
         "signing_address": ""
       }
+    },{
+      "id": 999,
+      "organization": "Keyko",
+      "name": "Charly López",
+      "election_round": "3rd",
+      "status": "Inactive",
+      "use_case": "General",
+      "location": "Spain",
+      "notary_application_link": "",
+      "website": "http://keyko.io",
+      "email": ["charly@keyko.io", "", ""],
+      "fil_slack_id": "clriesco",
+      "github_user": ["clriesco", ""],
+      "ldn_config": {
+        "active_signer": false,
+        "signing_address": "f1fqzg6wzl6xfjikjx45mscj6ajziktnioql4otfq"
+      },
+      "direct_config": {
+        "active_signer": false,
+        "signing_address": "f1fqzg6wzl6xfjikjx45mscj6ajziktnioql4otfq"
+      },
+      "previous_config": {
+        "signing_address": ""
+      }
     }
   ]
 }
