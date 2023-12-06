@@ -36,11 +36,11 @@
     "Weekly Allocation": "200TiB"
   },
   "Lifecycle": {
-    "State": "ReadyToSign",
+    "State": "StartSignDatacap",
     "Validated At": "2023-12-06 14:37:02.850747724 UTC",
     "Validated By": "panges2",
     "Active": true,
-    "Updated At": "2023-12-06 14:37:02.850750987 UTC",
+    "Updated At": "2023-12-06 14:54:30.371118158 UTC",
     "Active Request ID": "da1e87a5-22d1-41c4-a3b4-805603b4f7ca",
     "On Chain Address": "f1ryahi4jcdw6ople2rgnf42mprk6qpvskhgqun5i",
     "Multisig Address": "false"
@@ -53,7 +53,14 @@
       "Updated At": "2023-12-06 14:37:02.850753664 UTC",
       "Active": true,
       "Allocation Amount": "200TiB",
-      "Signers": []
+      "Signers": [
+        {
+          "Github Username": "cryptowhizzard",
+          "Signing Address": "f1krmypm4uoxxf3g7okrwtrahlmpcph3y7rbqqgfa",
+          "Created At": "2023-12-06 14:54:29.044000000 UTC",
+          "Message CID": "bafy2bzacedcdr4jj4fijpzyhi32gq2klwdnw233gx5z63omn4d7iy2dsearde"
+        }
+      ]
     }
   ]
 }
