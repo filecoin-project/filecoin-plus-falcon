@@ -36,14 +36,24 @@
     "Weekly Allocation": "250GiB"
   },
   "Lifecycle": {
-    "State": "Submitted",
-    "Validated At": "",
-    "Validated By": "",
+    "State": "ReadyToSign",
+    "Validated At": "2023-12-14 14:46:38.922476869 UTC",
+    "Validated By": "panges2",
     "Active": true,
-    "Updated At": "2023-12-14 14:45:08.547515170 UTC",
-    "Active Request ID": "",
+    "Updated At": "2023-12-14 14:46:38.922480534 UTC",
+    "Active Request ID": "c1b4cbfe-ab3c-4d11-9671-0dde6b80857e",
     "On Chain Address": "f1ehcelsvo73qpvupzfijv5gdg4yabr42fa7syhia",
     "Multisig Address": "false"
   },
-  "Allocation Requests": []
+  "Allocation Requests": [
+    {
+      "ID": "c1b4cbfe-ab3c-4d11-9671-0dde6b80857e",
+      "Request Type": "First",
+      "Created At": "2023-12-14 14:46:38.922482311 UTC",
+      "Updated At": "2023-12-14 14:46:38.922483157 UTC",
+      "Active": true,
+      "Allocation Amount": "250GiB",
+      "Signers": []
+    }
+  ]
 }
